@@ -26,7 +26,7 @@ h_theta = X*theta;
 J = ((h_theta -y)' * (h_theta -y) + lambda*(theta' * theta - theta(1)^2) )/2/m;
 
 % Compute gradient of the cost function
-grad = ((h_theta - y)'*X+ lambda*theta')/m
+grad = ((h_theta - y)'*X+ lambda*theta')/m;
 grad(1) -= lambda*theta(1)/m;
 
 
