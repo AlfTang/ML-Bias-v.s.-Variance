@@ -22,6 +22,9 @@ grad = zeros(size(theta));
 % Compute hypothesis
 h_theta = X*theta;
 
+% Compute cost function for regularised linear regression
+J = ((h_theta -y)' * (h_theta -y) + lambda*(theta' * theta - theta(1)^2) )/2/m;
+
 
 
 
